@@ -11,9 +11,9 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 
 ##### App dependencies, inheritance and relationships between libraries
 
-> **Bower dependencies**
+**Bower dependencies**
 ```js
-─┬── J server App v0.0.1
+─┬── [J server App v0.0.1]
  └──┬──┬ angular v1.4.7
     │  ├── angular-animate v1.4.7
     │  ├── angular-mocks v1.4.7
@@ -37,29 +37,29 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
     └─── jquery v2.1.4
 ```
 
-> **NPM dependencies**
+**NPM dependencies**
 ```js
-─┬── J server App v0.0.1
+─┬── [J server App v0.0.1]
  └──┬── Main dependencies
     └─┬── electron-packager @5.0.1
       ├── electron-debug @0.1.1
       ├── jquery @2.1.4
-      ├── sails.io.js @0.11.6
-      ├── socket.io-client @1.3.6
+      ├─┬ sails.io.js @0.11.6
+      │ └── socket.io-client @1.3.6
       ├── crypto @0.0.3
       ├── jwt-simple @^0.3.1
       ├── machinepack-gravatar @^1.2.0
       ├── machinepack-passwords @^2.3.0
       ├── moment @^2.10.6
-      ├── nodemailer @^1.8.0
-      ├── nodemailer-smtp-transport @^1.0.3
-      ├── passport @^0.3.0
-      ├── passport-local @^1.0.0
+      ├─┬ nodemailer @^1.8.0
+      │ └── nodemailer-smtp-transport @^1.0.3
+      ├─┬ passport @^0.3.0
+      │ └── passport-local @^1.0.0
       ├── querystring @^0.2.0
-      ├── rc @^1.1.0
       ├── request @^2.65.0
-      ├── sails @^0.11.0
-      └── sails-nedb @^0.10.0
+      └─┬ sails @^0.11.0
+        ├── rc @^1.1.0
+        └── sails-nedb @^0.10.0
 ```
 
 ## License
