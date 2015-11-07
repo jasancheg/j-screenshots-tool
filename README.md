@@ -29,9 +29,10 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 - Rest API built with Sailsjs (server App)
 - User interface built in Angularjs (client App)
 - *NeDB*, embedded persistent database with no dependency(except npm modules)
-- User authentication and session control (JWT, register, login, logout)
+- User authentication and session control (OAUTH, JWT, register, login, logout)
 - Simple Dashboard
 - Custom context menu
+- Render and analysis the 2d graphics
 - Grunt automatization, `compass, jshint, bower injection, watch, build, start the app, others...`
 
 ## Dev
@@ -163,7 +164,7 @@ Need help or have a question?
         └── sails-nedb @^0.10.0
 ```
 
-Scaffolding the application
+##Scaffolding the application
 
 ![](https://raw.githubusercontent.com/jasancheg/j-screenshots-tool/master/b-analysis/j-app.png)
 
