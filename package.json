@@ -1,0 +1,42 @@
+{
+  "name": "j-screenshots-tool",
+  "appName": "j",
+  "version": "0.0.1",
+  "private": true,
+  "description": "A new way to take, analyze, compare, perform QA processes and archive screenshots of your websites",
+  "main": "./app/app.js",
+  "license": "MIT",
+  "author": {
+    "name": "Jose Antonio Sanchez",
+    "email": "jasancheg@gmail.com",
+    "url": "inideaweb.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "electron-version": "0.34.0",
+  "clientAppPath": "app/client",
+  "serverAppPath": "app/server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jasancheg/j-screenshots-tool.git"
+  },
+  "keywords": [
+    "SailsJS",
+    "AngularJS",
+    "ELectron",
+    "Rest API",
+    "UI"
+  ],
+  "bugs": {
+    "url": "https://github.com/jasancheg/j-screenshots-tool/issues"
+  },
+  "homepage": "https://github.com/jasancheg/j-screenshots-tool#readme",
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}

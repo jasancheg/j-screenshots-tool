@@ -1,0 +1,32 @@
+{
+  "name": "jScreenshotsTool",
+  "main": "app.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/jasancheg/j-screenshots-tool",
+  "authors": [
+    "Jose Antonio Sanchez"
+  ],
+  "description": "A new way to take, analyze, compare, perform QA processes and archive screenshots of your websites",
+  "keywords": [
+    "sails",
+    "angular",
+    "electron"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "appPath": "app/client",
+  "moduleName": "jScreenshotsTool",
+  "overrides": {
+
+  }
+}
