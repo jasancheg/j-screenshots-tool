@@ -1,4 +1,7 @@
-# j-screenshots-tool
+> Basic cross platform desktop application
+
+J v0.0.1
+
 A new and easy way to make QA in your websites. The tool allow you to take screeshots in different browsers using your installed web browsers or you also can configure a service like BrowserStack or SauceLabs.
 
 - compare your website in different browsers 
@@ -8,6 +11,104 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 - use your lists to perform QA processes with just one click
 - set your test at a specific time
 - nice user interface
+
+(currently working on it...)
+
+
+## What is this repository for? ###
+
+* source code for distribution
+* executables for distribution
+
+
+## How do I get set up? ###
+
+### Features
+
+- Cross platform desktop application built with Electron (Mac OS, Windows, Linux)
+- Rest API built with Sailsjs (server App)
+- User interface built in Angularjs (client App)
+- *NeDB*, embedded persistent database with no dependency(except npm modules)
+- User authentication and session control (JWT, register, login, logout)
+- Simple Dashboard
+- Custom context menu
+- Grunt automatization, `compass, jshint, bower injection, watch, build, start the app, others...`
+
+## Dev
+
+For use the [electron-packager](https://github.com/maxogden/electron-packager) cli
+```
+npm i electron-packager -g
+```
+
+install root dependencies
+
+```
+$ npm install
+```
+
+install the server app dependencias (sails)
+
+```
+$ cd app/server
+$ npm install
+```
+
+### Dev Tools
+
+Toggle Dev Tools. Debug features using [electron-debug](https://github.com/sindresorhus/electron-debug).
+
+- OS X: <kbd>Cmd</kbd> <kbd>Alt</kbd> <kbd>I</kbd>
+- Linux: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd>
+- Windows: <kbd>Ctrl</kbd> <kbd>Shift</kbd> <kbd>I</kbd>
+
+### Reload
+
+Force reload the window.
+
+- OS X: <kbd>Cmd</kbd> <kbd>R</kbd>
+- Linux: <kbd>Ctrl</kbd> <kbd>R</kbd>
+- Windows: <kbd>Ctrl</kbd> <kbd>R</kbd>
+
+### Run
+
+```
+$ npm start
+```
+
+**or** directly run
+```
+$ grunt start
+```
+
+**or** run with developer tools open from the begining
+```
+$ npm run startd
+```
+
+### Build
+
+- Build all bundles: `$ npm run build`
+- Build Mac os bundle: `$ npm run build-mac`
+- Build Windows 32: `$ npm run build-win32`
+- Build Windows 64: `$ npm run build-win64`
+- Build linux 32: `$ npm run build-linux32`
+- Build linux 64: `$ npm run build-linux64`
+
+Builds the app for OS X, Linux, and Windows, using [electron-packager](https://github.com/maxogden/electron-packager).
+
+## Issue Submission
+comming soon (not sure)
+
+## Need help? Tutorial
+comming soon
+
+## Feature Requests
+
+This project will not be continued and will no longer maintained. It was a contribution by the Developer in charge, but you could try submitting a comment or provide feedback through the people involved in the project and we will be glad to hear your comments and if it is possible I will attend the need. For it check the contributors.txt file.
+
+## Support
+Need help or have a question?
 
 ##### App dependencies, inheritance and relationships between libraries
 
@@ -61,6 +162,10 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
         ├── rc @^1.1.0
         └── sails-nedb @^0.10.0
 ```
+
+Scaffolding the application
+
+![](https://raw.githubusercontent.com/jasancheg/j-screenshots-tool/master/b-analysis/j-app.png)
 
 ## License
 
