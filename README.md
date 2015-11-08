@@ -166,4 +166,4 @@ Need help or have a question?
 
 ## License
 
-GNU 2.0 © [Jose Antonio Sanchez](https://github.com/jasancheg)
+MIT © [Jose Antonio Sanchez](https://github.com/jasancheg)
