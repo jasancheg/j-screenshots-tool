@@ -1,6 +1,6 @@
 > Basic cross platform desktop application
 
-J v0.0.1
+**J v0.0.1**
 
 A new and easy way to make QA in your websites. The tool allow you to take screeshots in different browsers using your installed web browsers or you also can configure a service like BrowserStack or SauceLabs.
 
@@ -12,7 +12,7 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 - set your tests to a specific date and time
 - nice user interface
 
-(currently working on it...)
+***(currently working on it...)***
 
 
 ## What is this repository for? ###
@@ -35,7 +35,7 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 - Render and analysis graphics 2D
 - Complete grunt automatization of workflow
 
-## Dev
+### Dev
 
 For use the [electron-packager](https://github.com/maxogden/electron-packager) cli
 ```
@@ -106,7 +106,7 @@ Need help or have a question?
 #### App dependencies, inheritance and relationships between libraries
 
 **Bower dependencies**
-```sh
+```js
 ─┬── [J client App v0.0.1]
  └──┬──┬ angular v1.4.7
     │  ├── angular-animate v1.4.7
@@ -132,7 +132,7 @@ Need help or have a question?
 ```
 
 **NPM dependencies**
-```sh
+```js
 ─┬── [J server App v0.0.1]
  └──┬── Main dependencies
     └─┬── electron-packager @5.0.1
