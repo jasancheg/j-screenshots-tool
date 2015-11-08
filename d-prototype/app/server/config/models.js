@@ -17,7 +17,7 @@ module.exports.models = {
   * connections (see `config/connections.js`)                                *
   *                                                                          *
   ***************************************************************************/
-  connection: 'nedb'
+  connection: 'nedb',
 
   /***************************************************************************
   *                                                                          *
@@ -27,5 +27,9 @@ module.exports.models = {
   * See http://sailsjs.org/#/documentation/concepts/ORM/model-settings.html  *
   *                                                                          *
   ***************************************************************************/
+  migrate: 'safe',
+  autoPK: false,
+  autoCreatedAt: true,
+  autoUpdatedAt: true
 
 };

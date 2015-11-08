@@ -5,7 +5,7 @@
 ### Features
 
 - Rest API (server App)
-- User authentication and session control (JWT, register, login, logout)
+- User authentication and session control (OAuth 2.0, JWT, register, login, logout)
 
 ## Dev
 
@@ -33,4 +33,3 @@ $ sails generate backend
 ## License
 
 MIT © [Jose Antonio Sanchez](https://github.com/jasancheg)
-
