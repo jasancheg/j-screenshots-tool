@@ -9,7 +9,7 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 - find visual differences in the most efficient, fast and safe way
 - build projects and lists that you can reuse to perform Unit Test in your site
 - use your lists to perform QA processes with just one click
-- set your test at a specific time
+- set your tests to a specific date and time
 - nice user interface
 
 (currently working on it...)
@@ -17,8 +17,8 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 
 ## What is this repository for? ###
 
-* source code for distribution
-* executables for distribution
+* development source code
+* distribution executables
 
 
 ## How do I get set up? ###
@@ -26,14 +26,14 @@ A new and easy way to make QA in your websites. The tool allow you to take scree
 ### Features
 
 - Cross platform desktop application built with Electron (Mac OS, Windows, Linux)
-- Rest API built with Sailsjs (server App)
-- User interface built in Angularjs (client App)
-- *NeDB*, embedded persistent database with no dependency(except npm modules)
+- Rest API and server logic built with Sailsjs (server App)
+- User interface built in Angularjs and material design specifications (client App)
+- *NeDB*, embedded persistent database with no dependency (exept itself as npm module)
 - User authentication and session control (OAUTH, JWT, register, login, logout)
 - Simple Dashboard
-- Custom context menu
-- Render and analysis the 2d graphics
-- Grunt automatization, `compass, jshint, bower injection, watch, build, start the app, others...`
+- Custom context menu and dock icon with menu in the taskbar of the computer 
+- Render and analysis graphics 2D
+- Complete grunt automatization of workflow
 
 ## Dev
 
@@ -44,13 +44,14 @@ npm i electron-packager -g
 
 install root dependencies
 
-```
+```sh
 $ npm install
+$ bower install
 ```
 
 install the server app dependencias (sails)
 
-```
+```sh
 $ cd app/server
 $ npm install
 ```
@@ -73,18 +74,12 @@ Force reload the window.
 
 ### Run
 
-```
-$ npm start
-```
-
-**or** directly run
-```
+```sh
 $ grunt start
 ```
-
-**or** run with developer tools open from the begining
-```
-$ npm run startd
+**or** run with different options
+```sh
+$ npm grunt start:dev // developer tools open from the begining
 ```
 
 ### Build
@@ -104,18 +99,15 @@ comming soon (not sure)
 ## Need help? Tutorial
 comming soon
 
-## Feature Requests
-
-This project will not be continued and will no longer maintained. It was a contribution by the Developer in charge, but you could try submitting a comment or provide feedback through the people involved in the project and we will be glad to hear your comments and if it is possible I will attend the need. For it check the contributors.txt file.
-
 ## Support
 Need help or have a question?
 
-##### App dependencies, inheritance and relationships between libraries
+## Other
+#### App dependencies, inheritance and relationships between libraries
 
 **Bower dependencies**
-```js
-─┬── [J server App v0.0.1]
+```sh
+─┬── [J client App v0.0.1]
  └──┬──┬ angular v1.4.7
     │  ├── angular-animate v1.4.7
     │  ├── angular-mocks v1.4.7
@@ -140,7 +132,7 @@ Need help or have a question?
 ```
 
 **NPM dependencies**
-```js
+```sh
 ─┬── [J server App v0.0.1]
  └──┬── Main dependencies
     └─┬── electron-packager @5.0.1
@@ -164,7 +156,7 @@ Need help or have a question?
         └── sails-nedb @^0.10.0
 ```
 
-##Scaffolding the application
+#### Scaffolding the application
 
 ![](https://raw.githubusercontent.com/jasancheg/j-screenshots-tool/master/b-analysis/j-app.png)
 
