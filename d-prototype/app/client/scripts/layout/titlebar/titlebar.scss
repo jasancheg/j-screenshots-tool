@@ -1,0 +1,154 @@
+/**
+ * titlebar directive styles
+ */
+@import "../../assets/css/_variables";
+
+#titlebar {
+    
+    padding: 0 3px;
+    border-bottom: 0px solid $color-divider;
+    background-color: $white-bg;
+    position:fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    z-index: 99999;
+    height: 24px;
+    border-radius: 5px 5px 0 0;
+    
+    .titlebar-stoplight {
+
+        float: left;
+
+        .windows-minimize,
+        .windows-close,
+        .windows-toggle-fullscreen {
+            -webkit-app-region: no-drag;
+            outline: none;
+            outline-offset: 0;
+        }
+        .windows-minimize {
+            padding:5px 5px 0 5px;
+            border:none; 
+            color: #337ab7;
+            background: none;
+
+        }
+        .windows-minimize:hover {
+            color: #23527c;
+        }
+        .windows-close {
+            border-radius: 0px;
+            padding-top: 1px;
+        }
+        .windows-close:hover {   
+        }
+        .windows-toggle-fullscreen {
+            border:none; 
+            color: #337ab7;
+            background: none; 
+        }
+        .windows-toggle-fullscreen:hover {
+            color: #23527c;
+        }
+
+        .titlebar-close,
+        .titlebar-minimize,
+        .titlebar-fullscreen {
+            position: relative;
+            float: left;
+            margin: 6px 4px;
+            background-repeat: no-repeat;
+            background-image: url('../assets/images/stoplight.png');
+            background-size: auto 12px;
+            width: 12px;
+            height: 12px;
+            border-radius: 6px;
+            border:none;
+            -webkit-app-region: no-drag;
+            cursor: pointer;
+            outline: none;
+            outline-offset: 0
+        }
+        .titlebar-close:hover {
+            background-position: -26px 0;
+        }
+
+        .titlebar-minimize:hover {
+            background-position: 0 0;
+        }
+
+        .titlebar-fullscreen:hover  {
+            background-position: -13px 0;
+        }
+
+        div[class*='windows-']{
+        }
+        div[class*='titlebar-']{
+        }
+    }
+}
+#titlebar.darwin {
+}
+#titlebar.win32 {    
+    .titlebar-stoplight {
+        padding: 0px 4px 0 0;
+        float: right;
+    }
+}
+
+#titlebar.webkit-draggable {
+    -webkit-app-region: drag;
+}
+ 
+#titlebar:after,
+.titlebar-stoplight:after {
+    content: ' ';
+    display: table;
+    clear: both;
+}
+
+#titlebar.alt .titlebar-stoplight:hover .titlebar-close {
+    background-position: -104px 0;
+}
+
+#titlebar.alt .titlebar-stoplight:hover .titlebar-minimize {
+    background-position: -78px 0;
+}
+
+#titlebar.alt .titlebar-stoplight:hover .titlebar-fullscreen {
+    background-position: -91px 0;
+}
+
+
+
+.titlebar-close {
+    position: relative;
+    margin-left: 6px;
+    background-position: -65px 0;
+}
+
+.titlebar-fullscreen {
+    position: relative;
+    background-position: -52px 0;
+}
+
+.titlebar-minimize {
+    position: relative;
+    background-position: -39px 0;
+}
+
+.titlebar-close:active::after,
+.titlebar-minimize:active::after,
+.titlebar-fullscreen:active::after,
+.windows-close:active::after,
+.windows-minimize:active::after,
+.windows-toggle-fullscreen:active::after {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+}

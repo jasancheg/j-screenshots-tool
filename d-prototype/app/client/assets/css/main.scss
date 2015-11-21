@@ -1,0 +1,58 @@
+// bower:scss
+@import "../../../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+// endbower
+
+// General
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-radius: 5px;
+}
+body {
+    padding-top: 75px;
+}
+
+// General: directives
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+// Page: loading.html
+body#loadingPage {
+    padding-top:0;
+    #loading {
+        z-index: 99998;
+        width: 100%;
+        top: 42%;
+        position: absolute;
+        text-align: center;
+        #nodejsInstall {
+            display:none;
+        }
+        #nodejsInstall > h1 {
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        #nodejsInstall > h1 img{
+            margin-top: -6px;
+        }
+        .preloader-text {
+            font-size: 16px;
+            text-align: center;
+            font-family: 'Helvetica Neue', Helvetica, sans-serif;
+        }
+        .preloader {
+            background: none;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            margin: -50px 0 0 -50px;
+        }
+    }
+}

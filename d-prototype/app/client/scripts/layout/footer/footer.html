@@ -1,0 +1,15 @@
+<div class="footer navbar-fixed-bottom">
+    <div class="left-section pull-left">
+        <p><span class="glyphicon glyphicon-heart"></span> footer</p>
+    </div>
+    <div class="right-section pull-right" role="group" aria-label="...">
+        <div class="btn-group btns-footer" role="group" aria-label="...">
+            <a data-ng-repeat="r in footer.navRoutes" href="#{{r.originalPath}}" class="" 
+                ng-show="footer.isAuthenticated()" data-ng-bind-html="r.settings.icon + ' ' + r.title"></a> 
+            <a href="#/" class=""><i class="fa fa-wifi ico-succes"></i></a> 
+            <a class="btn-options btn-notif {{footer.notificationsClass}}" ng-click="footer.toggleNotifications()">
+                <i class="fa fa-cogs"></i>
+            </a>
+        </div>
+    </div>
+</div>

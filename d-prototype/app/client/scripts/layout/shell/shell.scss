@@ -1,0 +1,158 @@
+body #shell,
+section#shell {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    position:absolute;
+    border-radius: 0 0px 8px 8px;
+    overflow:hidden;
+}
+
+#alert {
+    position: absolute;
+    width: calc(100% - 270px);
+    top: 90px;
+    z-index: 999;
+    margin: 0 10px 0 250px;
+}
+
+/*#region Splash */
+#splash-page {
+    z-index: 99998;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    position: fixed;
+    background: #fff;
+    border-radius: 0 0px 8px 8px;
+    -moz-transition: ease-out all 0.3s 0.4s;
+    -o-transition: ease-out all 0.3s 0.4s;
+    -webkit-transition: ease-out all 0.3s 0.4s;
+    transition: ease-out all 0.3s 0.4s;
+}
+.loading {
+    z-index: 99998;
+    width: 100%;
+    top: 50%;
+    position: absolute;
+    text-align: center;
+
+    .preloader-text {
+        font-size: 16px;
+    }
+    .preloader {
+        background: url("../assets/images/preloader.gif") 0 0 no-repeat;
+        width: 25px;
+        height: 25px;
+        display: inline-block;
+        margin: 0px 0 -5px 0;
+    }   
+}
+
+#ngplus-overlay-container,
+.ngplus-overlay-background {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    border-radius: 0 0px 8px 8px;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+}
+.ngplus-overlay-background {
+    background-color: #fbfbfb;
+    opacity: 0.8;
+}
+.ngplus-overlay-content {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0!important;
+    z-index: 10000;
+    text-align: center;
+    padding: 0;
+    
+    .loading {
+        padding-left: 230px;
+    }
+}
+.page-spinner-message {
+    text-align: center;
+    font-size: 400%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    -webkit-text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px #000000;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.15);
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #F58A00;
+    padding: 0;
+}
+.page-spinner-message.page-spinner-message-subtle {
+    margin: 30% auto 0 auto;
+    font-size: 200%;
+}
+.overlay-message {
+    font-size: 200%;
+}
+.spinner {
+    margin: 20% auto 0 auto;
+    left: auto;
+    top: auto !important;
+}
+
+/*#region Angular ng-include, ng-view, ng-repeat shuffle animations*/
+.shuffle-animation.ng-enter,
+.shuffle-animation.ng-leave {
+    position: relative;
+}
+.shuffle-animation.ng-enter {
+    -moz-transition: ease-out all 0.3s 0.4s;
+    -o-transition: ease-out all 0.3s 0.4s;
+    -webkit-transition: ease-out all 0.3s 0.4s;
+    transition: ease-out all 0.3s 0.4s;
+    left: 2em;
+    opacity: 0;
+}
+    .shuffle-animation.ng-enter.ng-enter-active {
+        left: 0;
+        opacity: 1;
+    }
+.shuffle-animation.ng-leave {
+    -moz-transition: 0.3s ease-out all;
+    -o-transition: 0.3s ease-out all;
+    -webkit-transition: 0.3s ease-out all;
+    transition: 0.3s ease-out all;
+    left: 0;
+    opacity: 1;
+}
+    .shuffle-animation.ng-leave.ng-leave-active {
+        left: 2em;
+        opacity: 0;
+    }
+
+/*#region Angular ng-show dissolve animation */
+.dissolve-animation.ng-hide-remove,
+.dissolve-animation.ng-hide-add {
+    position: fixed !important;
+    display: inline !important;
+    -webkit-transition: 0.5s linear all;
+    -moz-transition: 0.5s linear all;
+    -o-transition: 0.5s linear all;
+    transition: 0.5s linear all;
+}
+    .dissolve-animation.ng-hide-remove.ng-hide-remove-active,
+    .dissolve-animation.ng-hide-add {
+        opacity: 1;
+    }
+        .dissolve-animation.ng-hide-add.ng-hide-add-active,
+        .dissolve-animation.ng-hide-remove {
+            opacity: 0;
+        }
+/*#region toastr */
+#toast-container.toast-top-full-width > div, #toast-container.toast-bottom-full-width > div {
+    margin: 4px auto;
+}

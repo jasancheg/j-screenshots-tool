@@ -1,0 +1,64 @@
+/* line 6, main.scss */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  border-radius: 5px;
+}
+
+/* line 13, main.scss */
+body {
+  padding-top: 75px;
+}
+
+/* line 18, main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 23, main.scss */
+body#loadingPage {
+  padding-top: 0;
+}
+/* line 25, main.scss */
+body#loadingPage #loading {
+  z-index: 99998;
+  width: 100%;
+  top: 42%;
+  position: absolute;
+  text-align: center;
+}
+/* line 31, main.scss */
+body#loadingPage #loading #nodejsInstall {
+  display: none;
+}
+/* line 34, main.scss */
+body#loadingPage #loading #nodejsInstall > h1 {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+/* line 42, main.scss */
+body#loadingPage #loading #nodejsInstall > h1 img {
+  margin-top: -6px;
+}
+/* line 45, main.scss */
+body#loadingPage #loading .preloader-text {
+  font-size: 16px;
+  text-align: center;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+/* line 50, main.scss */
+body#loadingPage #loading .preloader {
+  background: none;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  margin: -50px 0 0 -50px;
+}
+
+/*# sourceMappingURL=main.css.map */

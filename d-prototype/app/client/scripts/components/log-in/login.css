@@ -1,0 +1,12 @@
+/* line 1, login.scss */
+#login-view {
+  background: url("../assets/images/smile_128x128.png") -70px 40px no-repeat;
+}
+/* line 3, login.scss */
+#login-view .form-signin {
+  max-width: 300px;
+  margin: 14% auto 0 auto;
+  display: block;
+}
+
+/*# sourceMappingURL=login.css.map */

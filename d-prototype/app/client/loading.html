@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="loading">
+<head>
+    <meta charset="UTF-8">
+    <title>Server loading</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:css(app/client) styles/vendor.css -->
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../../bower_components/mdi/css/materialdesignicons.css" />
+        <link rel="stylesheet" href="../../bower_components/mdi/css/materialdesignicons.min.css" />
+        <link rel="stylesheet" href="../../bower_components/lumx/dist/lumx.css" />
+        <!-- endbower -->
+
+
+        <!-- build:js(app/client) scripts/main.js -->
+        <script src="assets/js/rendered-process.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body id="loadingPage">
+        <div id="loading">
+            <div id="loadingServer" ng-controller="loading">
+                <span class="preloader" id="progress" title="loading Rest Api"></span><br><span class="preloader-text">Initializing Server</span>
+            </div>
+            <div id="nodejsInstall">
+                <h1>
+                    <span id="progress"></span>
+                    <br><br>
+                    To run the Application you must isntall <a href="https://nodejs.org/en/">nodejs</a> first.
+                </h1>
+            </div>
+        </div>
+        <!-- bower:js -->
+        <script src="../../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../../bower_components/angular/angular.js"></script>
+        <script src="../../bower_components/velocity/velocity.js"></script>
+        <script src="../../bower_components/velocity/velocity.ui.js"></script>
+        <script src="../../bower_components/moment/moment.js"></script>
+        <script src="../../bower_components/lumx/dist/lumx.js"></script>
+        <script src="../../bower_components/angular-animate/angular-animate.js"></script>
+        <script src="../../bower_components/angular-route/angular-route.js"></script>
+        <script src="../../bower_components/sails.io.js/dist/sails.io.js"></script>
+        <script src="../../bower_components/angular-sails/dist/angular-sails.js"></script>
+        <script src="../../bower_components/angular-sanitize/angular-sanitize.js"></script>
+        <script src="../../bower_components/extras.angular.plus/ngplus-overlay.js"></script>
+        <script src="../../bower_components/lodash/lodash.js"></script>
+        <script src="../../bower_components/restangular/dist/restangular.js"></script>
+        <script src="../../bower_components/satellizer/satellizer.js"></script>
+        <!-- endbower -->
+        <script>
+             var loadingModule = angular.module('loading', ['lumx']);
+
+             loadingModule.controller('loading', ['LxProgressService', function(LxProgressService){
+                 LxProgressService.circular.show('primary', '#progress');
+             }])
+
+        </script>
+    </body>
+</html>
+    

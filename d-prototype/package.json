@@ -1,5 +1,5 @@
 {
-  "name": "j-screenshots-tool",
+  "name": "harmony",
   "appName": "j",
   "version": "0.0.1",
   "private": true,
@@ -9,7 +9,7 @@
   "author": {
     "name": "Jose Antonio Sanchez",
     "email": "jasancheg@gmail.com",
-    "url": "inideaweb.com"
+    "url": "http://inideaweb.com/labs/projects/harmony/"
   },
   "engines": {
     "node": ">=0.10.0"

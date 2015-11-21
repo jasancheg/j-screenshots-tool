@@ -1,0 +1,77 @@
+/*
+ * Sidebar
+ */
+
+@import "../../assets/css/_variables";
+
+/* Hide for mobile, show later */
+#sidebar {
+    //display: none;
+    width: 60px;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    border-right: 1px solid $color-divider;
+    position: fixed;
+    top: 65px;
+    left: 0;
+    min-height: calc(100% - 65px);
+    z-index: 810;
+    background: #fff;
+    border-radius: 0 0px 8px 8px;
+    -webkit-transition: -webkit-transform .3s ease-in-out,all .3s ease-in-out;
+       -moz-transition: -moz-transform .3s ease-in-out,all .3s ease-in-out;
+         -o-transition: -o-transform .3s ease-in-out,all .3s ease-in-out;
+            transition: transform .3s ease-in-out,all .3s ease-in-out;
+
+    #authBox {
+        .name-input {
+            padding-left: 0;
+            padding-right: 0;
+        }
+        p {
+            padding-top: 20px;
+        }
+        .thumbnail i {
+            font-size: 55px;
+            color: #888;
+            line-height: 50px;
+            padding:1px 0 0 1px;
+        }
+    }
+    /* Sidebar navigation */
+    .nav-sidebar {
+        margin-right: -21px; /* 20px padding + 1px border */
+        margin-bottom: 20px;
+        margin-left: -20px;
+    }
+    .nav-sidebar > li.nPurple > a {
+        padding-right: 20px;
+        padding-left: 20px;
+        -webkit-transition: background 0.5s ease;
+        -moz-transition: background 0.5s ease;
+        -o-transition: background 0.5s ease;
+        transition: background 0.5s ease;
+    }
+    .nav-sidebar > li.nPurple.current > a,
+    .nav-sidebar > li.nPurple.current > a:hover,
+    .nav-sidebar > li.nPurple.current > a:focus {
+        color: #fff;
+        background-color: $purple-darker;
+    }
+}
+.hide-navs #sidebar {
+    -moz-transition: ease-out all 0.3s 0.4s;
+      -o-transition: ease-out all 0.3s 0.4s;
+    -webkit-transition: ease-out all 0.3s 0.4s;
+            transition: ease-out all 0.3s 0.4s;
+    margin-left: -230px;     
+}
+
+@media (min-width: 768px) {
+    #sidebar {
+        width: 230px;
+    }
+}
