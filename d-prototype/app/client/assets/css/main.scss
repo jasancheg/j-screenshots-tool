@@ -1,6 +1,7 @@
 // bower:scss
 @import "../../../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
 // endbower
+@import '_fonts.scss';
 
 // General
 html,
@@ -25,7 +26,7 @@ body#loadingPage {
     #loading {
         z-index: 99998;
         width: 100%;
-        top: 42%;
+        top: 35%;
         position: absolute;
         text-align: center;
         #nodejsInstall {
@@ -43,16 +44,16 @@ body#loadingPage {
             margin-top: -6px;
         }
         .preloader-text {
+            font-family: 'Roboto Bold Condensed', Helvetica, sans-serif;
             font-size: 16px;
             text-align: center;
-            font-family: 'Helvetica Neue', Helvetica, sans-serif;
         }
         .preloader {
             background: none;
-            width: 50px;
-            height: 50px;
+            width: 100px;
+            height: 100px;
             display: inline-block;
-            margin: -50px 0 0 -50px;
+            margin: 0;
         }
     }
 }
