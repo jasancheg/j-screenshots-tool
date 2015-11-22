@@ -11,8 +11,6 @@
         <link rel="stylesheet" href="../../bower_components/mdi/css/materialdesignicons.min.css" />
         <link rel="stylesheet" href="../../bower_components/lumx/dist/lumx.css" />
         <!-- endbower -->
-
-
         <!-- build:js(app/client) scripts/main.js -->
         <script src="assets/js/rendered-process.js"></script>
         <!-- endbuild -->
@@ -30,6 +28,7 @@
                 </h1>
             </div>
         </div>
+        <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../../bower_components/jquery/dist/jquery.js"></script>
         <script src="../../bower_components/angular/angular.js"></script>
@@ -47,13 +46,17 @@
         <script src="../../bower_components/restangular/dist/restangular.js"></script>
         <script src="../../bower_components/satellizer/satellizer.js"></script>
         <!-- endbower -->
+        <!-- endbuild -->
         <script>
+            /**
+             * small module to manage the loading page and lumx UI
+             * @type {[angular]}
+             */
              var loadingModule = angular.module('loading', ['lumx']);
 
              loadingModule.controller('loading', ['LxProgressService', function(LxProgressService){
                  LxProgressService.circular.show('primary', '#progress');
-             }])
-
+             }]);
         </script>
     </body>
 </html>

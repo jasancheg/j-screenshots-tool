@@ -302,7 +302,7 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the app
         wiredep: {
             app: {
-                src: ['<%= config.app %>/index.html'],
+                src: ['<%= config.app %>/index.html', '<%= config.app %>/loading.html'],
                 // exclude files path depends of the target and is define in the origin of the call
                 exclude: ['<%= config.jsPathExclude %>'],
                 // currentJs Path depends of the target and is define in the origin of the call
