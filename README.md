@@ -166,4 +166,4 @@ Need help or have a question?
 
 ## License
 
-MIT © [Jose Antonio Sanchez](https://github.com/jasancheg)
+MIT © [Jose Antonio Sanchez](https://github.com/jasancheg) ![](https://raw.githubusercontent.com/jasancheg/j-screenshots-tool/master/c-design/img/logo/me.png)
