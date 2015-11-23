@@ -4,7 +4,7 @@
 
 **Codename:** ***[Harmony]*** 
 
-![](https://raw.githubusercontent.com/jasancheg/j-screenshots-tool/master/c-design/img/logo/gh-harmony.png)
+![](https://raw.githubusercontent.com/jasancheg/j-screenshots-tool/master/c-design/img/logo/gh-harmony-2.png)
 
 A new and easy way to make QA in your websites. The tool allow you to take screeshots in different browsers using your installed web browsers or you also can configure a service like BrowserStack or SauceLabs.
 

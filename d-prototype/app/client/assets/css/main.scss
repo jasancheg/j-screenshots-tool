@@ -1,5 +1,5 @@
 // bower:scss
-@import "../../../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss";
+@import '../../../../bower_components/bourbon/app/assets/stylesheets/_bourbon.scss';
 // endbower
 @import '_fonts.scss';
 
@@ -23,6 +23,7 @@ body {
 // Page: loading.html
 body#loadingPage {
     padding-top:0;
+    -webkit-app-region: no-drag;
     #loading {
         z-index: 99998;
         width: 100%;

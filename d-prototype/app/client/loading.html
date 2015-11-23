@@ -16,7 +16,14 @@
         <!-- endbuild -->
     </head>
     <body id="loadingPage">
-        <div id="loading">
+
+
+                <div class="p+ bgc-blue-500" flex-container="column" flex-align="space-between center">
+                    <lx-progress lx-type="circular" lx-color="primary"></lx-progress>
+                    <span class="preloader-text">Initializing Server</span>
+                </div>
+
+        <!-- <div id="loading">
             <div id="loadingServer" ng-controller="loading">
                 <span class="preloader" id="progress" title="loading Rest Api"></span>
                 <br><span class="preloader-text">Initializing Server</span>
@@ -28,7 +35,7 @@
                     To run the Application you must isntall <a href="https://nodejs.org/en/">nodejs</a> first.
                 </h1>
             </div>
-        </div>
+        </div> -->
         <!-- build:js(.) scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../../bower_components/jquery/dist/jquery.js"></script>
